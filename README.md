@@ -72,3 +72,6 @@ monster
 ```
 
 
+## Cookie monster
+
+https://challenge.hiringsolved.com/monster
