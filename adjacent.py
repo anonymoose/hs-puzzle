@@ -9,7 +9,7 @@ CHUNK_LENGTH = 4
 
 
 def find_pair(source, chunk_length):
-    # find lowercase strings of $chunk_length (whisper)
+    # find lowercase strings of $chunk_length (whisper), followed by $chunk_length UPPERCASE characters (shouted)
     matches = re.findall(r"[a-z]{%d}[A-Z]{%d}" % (chunk_length, chunk_length), source, overlapped=True)
 
     # find uppercase versions of the previous whispers (shout)
